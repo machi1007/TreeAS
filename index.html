@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>教學與學習成果</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8eff1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        header, footer {
+            background: linear-gradient(135deg, #6b8ce8 0%, #7489e3 100%);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        select {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #f4f4f4;
+            font-size: 16px;
+        }
+
+        .content-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            color: #4a69bd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+    <script>
+        function scrollToCourse() {
+            var course = document.getElementById("courseSelect").value;
+            document.getElementById(course).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>教學與學習成果</h1>
+            <select id="courseSelect" onchange="scrollToCourse()">
+                <option value="courseA">112上學期</option>
+                <option value="courseB">112下學期</option>
+                <option value="courseC">113上學期</option>
+                <option value="courseD">113下學期</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-section" id="courseA">
+            <h2>🚢112上學期</h2>
+                        <h3>️⛵百萬小學堂（看見高雄）</h3>
+                        <h5>🪝高雄美食景點個人簡報</h5>
+                        <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/kwvo9po1r7uenp8m" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Made with Padlet"></div></a></div></div>
+                        <h5>🪝高雄地點推薦</h5>
+            
+                        <h3>️⛵百萬小學堂（夢想實踐家）</h3>
+                        <h5>🪝個人理財計畫</h5>
+                        <h5>🪝理財資料搜集</h5>
+                        <h5>🪝Scratch互動式動畫</h5>
+
+                        <h3>️⛵閱讀大觀園</h3>
+                        <h5>🪝人權角色</h5>
+                        <h5>🪝好書分享</h5>
+
+                        <h3>️⛵四維兒童</h3>
+                        <h5>🪝自我學習</h5>
+                        <h5>🪝心靈成長</h5>
+                        <h5>🪝聖誕小卡</h5>
+
+                        <h3>️⛵國語</h3>
+                        <h5>🪝複習簡報（重點版）</h5>
+                        <h5>🪝複習簡報（錯題版）</h5>
+                        <h5>🪝課程心智圖</h5>                        
+
+                        <h3>️⛵數學</h3>
+                        <h5>🪝數學課堂練習</h5>
+                        <h5>🪝數學習作訂正</h5>
+
+                        <h3>️⛵健康</h3>
+                        <h5>🪝健康生活校園</h5>
+                        <h5>🪝個人疾病預防</h5>
+
+                        <h3>️⛵綜合</h3>
+                        <h5>🪝我的生活點滴</h5>
+                        <h5>🪝校園危險繪圖</h5>
+
+                        <h3>️⛵寒假生活</h3>
+                        <h5>🪝自我學習</h5>
+                        <h5>🪝心靈成長</h5>
+                        
+            <!-- 課程A的教學與學習成果內容 -->
+        </div>
+
+        <div class="content-section" id="courseB">
+            <h2>🚢112下學期</h2>
+            <!-- 課程B的教學與學習成果內容 -->
+        </div>
+
+        <div class="content-section" id="courseC">
+            <h2>🚢113上學期</h2>
+            <!-- 課程C的教學與學習成果內容 -->
+        </div>
+
+        <div class="content-section" id="courseD">
+            <h2>🚢113下學期</h2>
+            <!-- 課程D的教學與學習成果內容 -->
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>大樹 © 2024</p>
+    </footer>
+</body>
+</html>
